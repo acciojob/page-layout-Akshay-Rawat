@@ -1,15 +1,15 @@
-
 import React from "react";
-import './../styles/App.css';
-import {Page  } from "Page";
+import PageLayout from "./PageLayout";
+
 const App = () => {
   return (
-    <div>
-        {
-          <Page/>
-        }
-    </div>
-  )
-}
+    <PageLayout
+      header={<h1>My Website</h1>}
+      footer={<p>© 2023 My Website</p>}
+    >
+      <p>This is the content of my website.</p>
+    </PageLayout>
+  );
+};
 
-export default App
+export default App;
